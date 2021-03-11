@@ -9,7 +9,7 @@
 - Sends a DM to the author of the message with follow-up information.
 - Removes the original command from where it was posted.
 - Checks the author of the message into the database.
-- Restricts accounts from checking in with multiple emails.
+- Prevents accounts from checking in with multiple emails.
 - Adds appropriate role upon check-in.
 
 ### `!checkedin <email>`
