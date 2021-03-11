@@ -6,6 +6,7 @@
   "scripts": {
     "start": "pm2 start index.mjs",
     "stop": "pm2 delete index",
+    "restart": "pm2 restart index --update-env",
     "dev": "nodemon .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
