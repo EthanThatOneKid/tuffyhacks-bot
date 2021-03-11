@@ -1,3 +1,7 @@
+# nedb
+*.db
+archive/checkins/**
+
 # Logs
 logs
 *.log
