@@ -20,9 +20,9 @@ client.on("message", (message) => {
   for (const [command, executeCommand] of commands) {
     if (message.content.startsWith(BOT_COMMAND_PREFIX + command)) {
       executeCommand(message);
-      if (message.channel.id === CHECKIN_CHANNEL_ID) {
-        message.delete();
-      }
+      // if (message.channel.id === CHECKIN_CHANNEL_ID) {
+      //   message.delete();
+      // }
     }
   }
 });
