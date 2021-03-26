@@ -19,11 +19,14 @@ client.once("ready", () => {
 client.on("message", (message) => {
   for (const [command, executeCommand] of commands) {
     if (message.content.startsWith(BOT_COMMAND_PREFIX + command)) {
-      executeCommand(message);
-      // if (message.channel.id === CHECKIN_CHANNEL_ID) {
-      //   message.delete();
-      // }
+      return executeCommand(message);
     }
+  }
+  if (message.channel === CHECKIN_CHANNEL_ID) {
+    message.author.send(
+      `> ${message.content}\nThe only available command is \`!checkin\`.`
+    );
+    message.delete();
   }
 });
 
