@@ -42,7 +42,3 @@ Read: <https://github.com/louischatriot/nedb#basic-querying>.
 ### `POST /cleanup`
 
 This request backs up all the check-in entries on file and then removes them from the current process.
-
-### `DELETE /checkins/:email`
-
-_TODO_
